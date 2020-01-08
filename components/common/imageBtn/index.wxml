@@ -1,0 +1,9 @@
+<!--components/common/share/index.wxml-->
+  <button open-type="{{openType}}"         
+          bindgetuserinfo="onGetUserInfo"
+          plain 
+          class="container"
+  >
+   <slot name="img"></slot>
+  </button>
+

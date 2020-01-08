@@ -1,0 +1,13 @@
+<!--components/books/book/index.wxml-->
+<view class="book-item-wrapper" wx:if="{{itemObj}}">
+  <image mode="widthFix" class="book-cover" src="{{itemObj.images.small}}"></image>
+  <view class="info-wrapper">
+    <view class="name">{{itemObj.title}}</view>
+    <view class="star">
+      <star score="{{itemObj.rating.average}}"/>
+    </view>
+    <view class="des">{{itemObj.author[0]}}/{{itemObj.publisher}}/{{itemObj.pubdate}}</view>
+    <view class="description">{{itemObj.summary}}</view>
+  </view>
+</view>
+

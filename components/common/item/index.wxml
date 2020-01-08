@@ -1,0 +1,9 @@
+<!--components/common/item/index.wxml-->
+<view class="list-item" bindtap="toDetail" data-id="{{itemObj.id}}">
+  <image mode="widthFix"  class="coverPic" src="{{itemObj.images.small}}"></image>
+  <view class="name">{{itemObj.title}}</view>
+  <view class="rating">
+    <x-star score="{{itemObj.rating.average}}"></x-star>
+    <view class="score">{{itemObj.rating.average}}</view>
+  </view>
+</view>

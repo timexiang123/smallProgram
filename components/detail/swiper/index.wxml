@@ -1,0 +1,8 @@
+<!--components/detail/swiper/index.wxml-->
+<view class="swiper-wrapper" wx:if="{{trailers}}">
+  <swiper indicator-dots indicator-color="#fff" indicator-active-color="#f00" autoplay interval="{{3000}}" circular >
+     <swiper-item wx:for="{{trailers}}" wx:key="{{item.id}}" >
+       <video src="{{defaultSrc}}" poster="{{item.small}}" controls loop></video>
+     </swiper-item>
+  </swiper>
+</view>

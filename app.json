@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/index",
+    "pages/editInfo/index",
+    "pages/login/index",
+    "pages/search/index",
+    "pages/books/index",
+    "pages/books/detail/index",
+    "pages/detail/index",
+    "pages/more/index"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar":{
+    "color":"#000",
+    "selectedColor":"#f00",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"电影",
+        "iconPath":"static/img/home_01.png",
+        "selectedIconPath":"static/img/home_02.png"
+      },
+      {
+        "pagePath": "pages/books/index",
+        "text": "图书",
+        "iconPath": "static/img/book_01.png",
+        "selectedIconPath": "static/img/book_02.png"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "static/img/search_01.png",
+        "selectedIconPath": "static/img/search_02.png"
+      },
+      {
+        "pagePath": "pages/person/index",
+        "text": "个人中心",
+        "iconPath": "static/img/user_01.png",
+        "selectedIconPath": "static/img/user_02.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

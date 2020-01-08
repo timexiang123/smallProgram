@@ -1,0 +1,11 @@
+<!--pages/editInfo/index.wxml-->
+<nav title="编辑个人信息" isBack backText="返回"></nav>
+<view class="edit-wrapper">
+  <view class="title">请更改你的个人信息:</view>
+  <form class="form" bindsubmit="toUpdateInfo">
+      <view class="nickname"><text>您的昵称：</text><input type="text" placeholder="请输入您的昵称" name="nickname"/></view>
+       <view class="gender"><text>您的性别：</text><input type="text" placeholder="请输入您的性别" name="gender"/></view>
+      <view class="age"><text>您的年龄：</text><input  placeholder="请输入您的年龄"  name="age"/></view>
+      <button form-type="submit" class="submit">确定修改？</button>
+  </form>
+</view>

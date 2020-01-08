@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav":"/components/nav/index",
+    "x-divider":"/components/common/divider/index",
+    "x-image":"/components/common/imageBtn/index",
+    "x-chooseImage":"/components/common/chooseImage/index"
+  }
+}

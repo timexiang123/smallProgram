@@ -1,0 +1,29 @@
+/* components/common/ratings/index.wxss */
+.ratings-wrapper{
+  padding:0 30rpx;
+  background-color:#303030;
+  overflow:hidden;
+}
+.title{
+  font-size:36rpx;
+  color:#cecece;
+  margin:56rpx 0 16rpx;
+}
+.rating-content{
+  display:flex;
+  margin-bottom:30rpx;
+}
+.ratingAvatar{
+  width:48rpx;
+  height:48rpx;
+  margin-right: 10rpx;
+  border-radius:50%;
+}
+.rating-info{
+  flex:1;
+  color:#cecece;
+}
+.content{
+  font-size:28rpx;
+  line-height:40rpx;
+}

@@ -1,0 +1,5 @@
+<!--components/common/star/index.wxml-->
+<wxs src="../../../wxs/star.wxs" module="star" ></wxs>
+<view class="star-wrapper">
+    <image mode="widthFix" wx:for="{{scoreArr}}" wx:key="{{index}}" src="{{star.calcStar(item)}}"></image>
+</view>

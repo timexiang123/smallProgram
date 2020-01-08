@@ -1,0 +1,13 @@
+<!--components/detail/info/infoCard/index.wxml-->
+<view class="card-wrapper">
+  <view class="main">
+    <view class="cart-title">综合评分</view>
+    <view class="rating">
+      <view class="score">{{score}}</view>
+      <view class="ratingRelated">
+        <x-star score="{{score}}"></x-star>
+        <view class="favorCount">{{favorCount}} 人点赞</view>
+      </view>
+    </view>
+  </view>
+</view>

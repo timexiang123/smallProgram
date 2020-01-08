@@ -1,0 +1,40 @@
+/* components/books/book/index.wxss */
+
+.book-item-wrapper {
+  display: flex;
+  margin-bottom:10rpx;
+  background-color:#fff;
+}
+
+.book-cover {
+  width: 166rpx ;
+  height: 236rpx  ;
+  margin:10rpx;
+  margin-right:48rpx;
+}
+
+.info-wrapper{
+  width:500rpx;
+}
+.name{
+  font-size:28rpx;
+  font-weight:700;
+  margin-top:20rpx;
+}
+.star{
+  margin:6rpx 0 4rpx;
+}
+.des{
+  font-size:26rpx;
+  color:#7d7d7d;
+}
+.description{
+  height:90rpx;
+  font-size:22rpx;
+  color:#7d7d7d;
+  margin-top:12rpx;
+  margin-bottom:20rpx;
+  text-indent:26rpx;
+  overflow:hidden;
+}
+

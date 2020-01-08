@@ -1,0 +1,13 @@
+<!--pages/books/detail/index.wxml-->
+<nav bgColor="bg-gradual-orange" title="图书详情" isBack backText="返回"></nav>
+<view class="detail-wrapper">
+   <!--封面图start-->
+   <bd-cover imgCover="{{bookDetail.image}}" title="{{bookDetail.title}}"></bd-cover>
+   <!--封面图end-->
+   <!--详情信息start-->
+   <bd-info infoObj="{{bookDetail}}"></bd-info>
+   <!--详情信息end-->
+   <!--评论start-->
+   <bd-ratings ratingsObj="{{bookDetail}}" ></bd-ratings>
+   <!--评论end-->
+</view>

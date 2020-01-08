@@ -1,0 +1,8 @@
+<!--components/index/swiper/index.wxml-->
+<view class="swiper-wrapper">
+  <swiper indicator-dots indicator-active-color="#00ff00" autoplay interval="{{3000}}" circular>
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{item.id}}" bindtap="previewImage" data-url="{{index}}">
+       <image mode="widthFix" src="{{item.url}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

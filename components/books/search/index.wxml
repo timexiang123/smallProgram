@@ -1,0 +1,7 @@
+<!--components/books/search/index.wxml-->
+<view class='search-wrapper'>
+    <view class="search-box" bindtap="toSearch">
+      <icon type="search"></icon>
+      <text>搜索图书名称</text>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav":"/components/nav/index",
+    "bd-cover":"/components/books/detail/cover/index",
+    "bd-info":"/components/books/detail/info/index",
+    "bd-ratings":"/components/common/ratings/index"
+  }
+}

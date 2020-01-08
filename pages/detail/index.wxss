@@ -1,0 +1,7 @@
+/* pages/detail/index.wxss */
+.detail-wrapper{
+  background-color:#f7f4f9;
+}
+.detail-main{
+  padding:0 20rpx 20rpx;
+}

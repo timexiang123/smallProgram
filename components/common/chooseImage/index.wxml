@@ -1,0 +1,21 @@
+<!--components/common/chooseImage/index.wxml-->
+<view class="chooseImage-wrapper">
+  <view class="chooseImage-box">
+    <image class="cancel" mode="widthFix" src="/static/img/cancel.png" bindtap="cancel"></image>
+    <view class="title">请选择你喜欢的图片</view>
+    <view class="main">
+      <view class="left" bindtap="chooseImage">
+        <image mode="widthFix" src="/static/img/camera.png"></image>
+        <text>从相片中选择</text>
+      </view>
+      <view class="right">
+        <view class="notice">已选择：3/4</view>
+        <view class="image-list">
+          <view wx:for="{{imgList}}" wx:key="{{item}}" class="image-item">
+            <image mode="widthFix" src="{{item}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

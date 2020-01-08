@@ -1,0 +1,11 @@
+/* pages/search/index.wxss */
+.list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:30rpx;
+}
+.list-item-wrapper{
+  margin-bottom:32rpx;
+}

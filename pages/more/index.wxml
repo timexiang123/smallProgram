@@ -1,0 +1,10 @@
+<!--pages/more/index.wxml-->
+<view class="more-wrapper">
+<!--list start-->
+ <view class="list">
+  <view class="list-item-wrapper" wx:for="{{subjects}}" wx:key="{{item.id}}">
+       <x-item itemObj="{{item}}"></x-item>
+  </view>
+</view>
+<!--list end-->
+</view>

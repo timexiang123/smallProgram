@@ -1,0 +1,8 @@
+/* pages/books/index.wxss */
+.books-wrapper{
+  background-color:#fff;
+}
+.book-list{
+  background-color:#eeeeee;
+}
+

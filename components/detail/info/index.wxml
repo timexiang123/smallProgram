@@ -1,0 +1,16 @@
+<!--components/detail/info/index.wxml-->
+<view class="info-wrapper">
+   <image class="coverImage" mode="widthFix" src="{{info.images.small}}"></image>
+   <view class="right-info">
+     <view class="movie-name">{{info.title}}</view>
+     <view class="description">
+       <view class="type">{{item.genres.join("/")}}</view>
+       <view class="original-name">原名：{{item.original_title}}</view>
+       <view class="movie-duration">影片时长：{{item.durations.join("/")}}</view>
+       <view class="publishTime">上映时间：{{item.pubdates.join("/")}}</view>
+     </view>
+     <view class="card">
+       <card score="{{item.rating.average}}" favorCount="{{item.collect_count}}"></card>
+     </view>
+   </view>
+</view>

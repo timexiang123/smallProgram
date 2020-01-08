@@ -1,0 +1,1 @@
+export default 'https://h5sm.com/uni/api/';

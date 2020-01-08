@@ -1,0 +1,9 @@
+/* components/index/top250/index.wxss */
+.list {
+  padding-left: 20rpx;
+  white-space: nowrap;
+}
+.list-item-wrapper{
+  display:inline-block;
+  margin-right:20rpx;
+}

@@ -1,0 +1,7 @@
+/* components/books/detail/info/index.wxss */
+.info-wrapper{
+  background-color:#303030;
+}
+.info-main{
+  padding:0 30rpx;
+}

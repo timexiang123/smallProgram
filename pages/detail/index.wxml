@@ -1,0 +1,25 @@
+<!--pages/detail/index.wxml-->
+<nav title="电影详情" isBack backText="返回"></nav>
+<view class="detail-wrapper">
+  <!--swiper start-->
+  <d-swiper trailers="{{detail.trailers}}"></d-swiper>
+  <!--swiper end-->
+  <view class="detail-main">
+    <!--info start-->
+    <d-info info="{{detail}}"></d-info>
+    <!--info end-->
+    <d-divider lineWidth="710rpx" lineHeight="2rpx" bgColor="#dbdbda"></d-divider>
+    <!--剧情介绍start-->
+    <d-plot summary="{{detail.summary}}"></d-plot>
+    <!--剧情介绍end-->
+    <!--演职表start-->
+    <d-performer casts="{{detail.casts}}"></d-performer>
+    <!--演职表end-->
+    <!--剧照start-->
+    <d-stills photos="{{detail.photos}}"></d-stills>
+    <!--剧照end-->
+    <!--评论start-->
+    <d-ratings ratingsObj="{{detail}}"></d-ratings>
+    <!--评论end-->
+  </view>
+</view>

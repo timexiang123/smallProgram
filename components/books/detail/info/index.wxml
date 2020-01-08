@@ -1,0 +1,11 @@
+<!--components/books/detail/info/index.wxml-->
+<view class="info-wrapper">
+    <view class="info-main" wx:if="{{infoObj}}" >
+        <!--des start-->
+        <id-des score="{{infoObj.rating.average}}" numRaters="{{infoObj.rating.numRaters}}"  author="{{infoObj.author[0]}}" publisher="{{infoObj.publisher}}"  pubdate="{{infoObj.pubdate}}"  ></id-des>
+        <!--des end -->
+        <!--description start-->
+        <id-description summary="{{infoObj.summary}}"></id-description>
+        <!--description end-->
+    </view>
+</view>

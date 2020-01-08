@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "nav":"/components/nav/index",
+    "d-swiper":"/components/detail/swiper/index",
+    "d-info":"/components/detail/info/index",
+    "d-divider": "/components/common/divider/index",
+    "d-plot":"/components/detail/plot/index",
+    "d-performer":"/components/detail/performer/index",
+    "d-stills": "/components/detail/stills/index",
+    "d-ratings":"/components/common/ratings/index"
+  }
+}

@@ -1,0 +1,12 @@
+<!--components/books/detail/info/des/index.wxml-->
+<view class="des-wrapper">
+  <view class="score-releated">
+    <view class="star">
+      <star score="{{score}}"></star>
+    </view>
+    <view class="score">{{score}}</view>
+    <view class="ratingCount">{{numRaters}}人点评</view>
+  </view>
+  <view class="name-releated">{{author}}/{{publisher}}/{{pubdate}}</view>
+  <divider lineWidth="670rpx" lineHeight="2rpx" bgColor="#2d2d2d"></divider>
+</view>

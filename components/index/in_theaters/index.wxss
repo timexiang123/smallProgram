@@ -1,0 +1,62 @@
+/* components/index/in_theaters/index.wxss */
+.list{
+  padding-left:20rpx;
+}
+.list-item{
+  display:flex;
+  margin-bottom:60rpx;
+}
+.movieCover{
+  width:200rpx;
+  height:270rpx;
+  margin-right:28rpx;
+}
+.description{
+  width:364rpx;
+  border-right:4rpx dashed #dfdfdf;
+}
+.title{
+  font-size:36rpx;
+  font-weight:700;
+  margin-bottom:8rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.des{
+  font-size:28rpx;
+  color:#939393;
+  margin-top:4rpx;
+  letter-spacing: 2rpx;
+  white-space:normal;
+  line-height:40rpx;
+}
+.favor{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex:1;
+}
+.toFavor,.cancelFavor{
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+}
+.toFavor .favorIcon,.cancelFavor .favorIcon{
+  width:36rpx;
+  height:36rpx;
+  margin-bottom:10rpx;
+}
+
+.toFavor text,.cancelFavor text{
+  font-size:30rpx;
+}
+.toFavor text{
+  color:#979797;
+}
+.cancelFavor text{
+  color:#ff0000;
+}
+

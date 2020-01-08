@@ -1,0 +1,5 @@
+<!--components/nav/index.wxml-->
+<cu-custom bgColor="{{bgColor}}" isBack="{{isBack}}">
+	<view slot="backText" wx:if="{{backText}}">返回</view>
+	<view slot="content">{{title}}</view>
+</cu-custom>

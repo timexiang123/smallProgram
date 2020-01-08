@@ -1,0 +1,28 @@
+<!--components/index/in_theaters/index.wxml-->
+<view class="in_theaters-wrapper">
+  <!--title start-->
+  <x-title src="/static/img/favor.png" channelName="正在热映"></x-title>
+  <!--title end-->
+  <!--list start-->
+  <view class="list">
+    <view class="list-item" wx:for="{{subjects}}" wx:key="{{item.id}}">
+      <image class="movieCover" mode="widthFix" src="{{item.images.small}}" bindtap="toDetail" data-id="{{item.id}}"></image>
+      <view class="description">
+        <view class="title">{{item.title}}</view>
+        <x-star score="{{item.rating.average}}"></x-star>
+        <view class="des">{{item.pubdates[0]}}/{{item.genres[0]}}/{{item.genres[1]}}/{{item.durations[0]}}</view>
+      </view>
+      <view class="favor">
+        <view class="toFavor" wx:if="{{!item.isFavor}}" catchtap="changeFavorStatus" data-index="{{index}}">
+          <image class="favorIcon" mode="widthFix" src="/static/img/zan.png"></image>
+          <text>赞一下</text>
+        </view>
+        <view class="cancelFavor" wx:else catchtap="changeFavorStatus" data-index="{{index}}" >
+          <image class="favorIcon" mode="widthFix" src="/static/img/zan_actived.png"></image>
+          <text>取消点赞</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--list end-->
+</view>

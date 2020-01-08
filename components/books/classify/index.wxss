@@ -1,0 +1,15 @@
+/* components/books/classify/index.wxss */
+.classify-wrapper{
+  white-space:nowrap;
+  background-color:#3f51b5;
+}
+.classify-item{
+ box-sizing: border-box;
+ display:inline-block;
+ padding:20rpx 36rpx;
+ font-size:36rpx;
+ color:#fff;
+}
+.active{
+  border-bottom:4rpx solid #f9377c;
+}

@@ -1,0 +1,13 @@
+<!--components/index/top250/index.wxml-->
+<view class="top-wrapper">
+  <!--title start-->
+  <x-title src="/static/img/rank.png" channelName="top250排行榜" />
+  <!--title end-->
+  <!--list start-->
+  <scroll-view class="list" scroll-x scroll-with-animation>
+     <view class="list-item-wrapper" wx:for="{{subjects}}" wx:key="{{item.id}}">
+       <x-item itemObj="{{item}}"></x-item>
+     </view>
+  </scroll-view>
+  <!--list end-->
+</view>

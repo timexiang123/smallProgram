@@ -1,0 +1,10 @@
+<!--components/detail/stills/index.wxml-->
+<view class="stills-wrapper">
+   <view class="stills-title">剧照</view>
+   <scroll-view class="stills-main" scroll-x scroll-with-animation>
+      <view class="stills-item" wx:for="{{photos}}" wx:key="{{item.id}}">
+         <image class="coverImage" mode="widthFix" src="{{item.cover}}"></image>
+      </view>
+   </scroll-view>
+</view>
+

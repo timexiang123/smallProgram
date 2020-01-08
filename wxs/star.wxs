@@ -1,0 +1,17 @@
+function calcStar(str) {
+  if (typeof str !== 'string') {
+    throw Error("所传参数必须是字符串");
+  }
+  switch (str) {
+    case 'actived':
+      return '/static/img/star_02.png'; break;
+    case 'half_actived':
+      return '/static/img/star_03.png'; break;
+    case 'unactived':
+      return '/static/img/star_01.png'; break;
+    default: break;
+  }
+}
+module.exports = {
+  calcStar: calcStar
+}

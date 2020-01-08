@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "nav":"/components/nav/index",
+    "x-swiper":"/components/index/swiper/index",
+    "x-divider":"/components/common/divider/index",
+    "x-comming-soon":"/components/index/commingSoon/index",
+    "x-notice":"/components/index/notice/index",
+    "x-top250":"/components/index/top250/index",
+    "x-in_theaters":"/components/index/in_theaters/index"
+  }
+}

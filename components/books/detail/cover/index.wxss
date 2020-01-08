@@ -1,0 +1,53 @@
+/* components/books/detail/cover/index.wxss */
+.cover-wrapper{
+  position:relative;
+  height:588rpx;
+  background: -webkit-linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+    background: linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+}
+.share-wrapper{
+  position:absolute;
+  top:72rpx;
+  right:22rpx;
+  width:44rpx;
+  height:44rpx;
+}
+.share-wrapper image{
+  width:100% ;
+  height:100%;
+}
+.cover-image{
+  position:absolute;
+  top:106rpx;
+  left:225rpx;
+  width:300rpx;
+  height:430rpx ;
+}
+.baidu-logo{
+  position:absolute;
+  right:28rpx;
+  bottom:-52rpx;
+  width:104rpx;
+  height:104rpx;
+  border-radius:50%;
+  background-color:#787878;
+  z-index:2;
+}
+.baidu{
+  display:block;
+  width:36rpx;
+  height:36rpx;
+  margin:34rpx auto;
+}
+.book-name{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:90rpx;
+  background:rgba(0,0,0,.5);
+  font-size:34rpx;
+  color:#bfaea7;
+  padding-left:44rpx;
+  line-height:90rpx;
+}

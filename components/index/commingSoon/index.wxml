@@ -1,0 +1,14 @@
+<!--components/index/commingSoon/index.wxml-->
+<view class="comming-soon-wrapper">
+   <!--title start-->
+   <x-title src="/static/img/hotmovie.png" channelName="即将上映"></x-title>
+   <!--title end-->
+   <!--list start-->
+   <scroll-view class="list" scroll-x scroll-with-animation>
+      <view class="list-item-wrapper" wx:for="{{subjects}}" wx:key="{{item.id}}">
+       <x-item itemObj="{{item}}"></x-item>
+      </view>
+   </scroll-view>
+   <!--list end-->
+   
+</view>

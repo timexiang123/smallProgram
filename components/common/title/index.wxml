@@ -1,0 +1,10 @@
+<!--components/index/title/index.wxml-->
+<view class="title-wrapper">
+  <view class="main">
+    <view class="left">
+      <image mode="widthFix" src="{{src}}"></image>
+      <text class="channelName">{{channelName}}</text>
+    </view>
+    <view class="right" hidden="{{isHidden}}" bindtap="toMore" >查看全部</view>
+  </view>
+</view>

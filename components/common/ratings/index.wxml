@@ -1,0 +1,17 @@
+<!--components/common/ratings/index.wxml-->
+<view class="ratings-wrapper" wx:if="{{ratingsObj &&ratingsObj.popular_reviews}}">
+  <view class="title">评价</view>
+  <view class="rating-content" wx:for="{{ratingsObj.popular_reviews}}" wx:key="{{item.id}}" wx:if="{{item}}">
+    <image mode="widthFix" class="ratingAvatar" src="{{item.author && item.author.avatar}}"></image>
+    <view class="rating-info">
+      <view class="userInfo">
+        <view class="rating-name">{{item.author &&item.author.name}}</view>
+        <view class="star">
+          <star score="{{item.rating && item.rating.value}}"></star>
+        </view>
+      </view>
+      <view class="content">{{item.summary}}</view>
+    </view>
+  </view>
+
+</view>

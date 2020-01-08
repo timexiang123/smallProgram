@@ -1,0 +1,20 @@
+/* components/books/search/index.wxss */
+.search-wrapper{
+  height:110rpx;
+  border-bottom:2rpx solid #e3e3e3;
+  overflow:hidden;
+}
+.search-box{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:690rpx;
+  height:70rpx;
+  margin:20rpx auto;
+  background-color:#f7f7f7;
+  border-radius:30rpx;
+}
+.search-box text{
+  font-size:28rpx;
+  color:#979797;
+}

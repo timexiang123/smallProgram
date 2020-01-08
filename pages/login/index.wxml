@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<nav title="登录注册页" isBack backText="返回"></nav>
+<view class="login-wrapper">
+  <image class="avatar" mode="widthFix" src="/static/img/avatar.png"></image>
+  <form class="form" bindsubmit="toSubmit">
+      <view class="userName"><text>账号：</text><input type="text" placeholder="请输入您的账号" name="username"/></view>
+      <view class="password"><text>密码：</text><input  placeholder="请输入您的密码" password name="password"/></view>
+      <button form-type="submit" class="submit">登录/注册</button>
+  </form>
+  <view class="otherWays">
+    <view class="title">
+       <view class="line"></view>
+       <view class="text">第三方账号登录</view>
+       <view class="line"></view>
+    </view>
+    <view class="suggest">
+       <image mode="widthFix" src="/static/img/weixin.png" />
+       <image mode="widthFix" src="/static/img/qq.png" />
+       <image mode="widthFix" src="/static/img/weibo.png" />
+    </view>
+  </view>
+</view>

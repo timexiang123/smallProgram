@@ -1,0 +1,34 @@
+/* components/books/detail/info/description/index.wxss */
+.description-wrapper{
+  padding-bottom:104rpx;
+}
+.main-description{
+  color:#cecece;
+  overflow: hidden;
+}
+.title{
+  font-size:36rpx;
+  margin:46rpx 0 20rpx;
+}
+.introduction{
+  font-size:30rpx;
+  line-height:50rpx;
+}
+.line{
+  margin-top:30rpx;
+}
+.open,.close{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:-24rpx;
+  color:#cecece;
+}
+.open image,.close image{
+  width:32rpx;
+  height:32rpx;
+  margin-right:12rpx;
+}
+.showPart{
+   height:310rpx;
+}

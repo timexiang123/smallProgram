@@ -1,0 +1,14 @@
+/* components/index/notice/index.wxss */
+.list{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 20rpx;
+}
+.list-item {
+ 
+}
+.list-item video{
+  width:350rpx;
+  height:220rpx;
+}

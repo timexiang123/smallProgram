@@ -1,0 +1,4 @@
+/* components/common/divider/index.wxss */
+.divider{
+  margin:auto;
+}

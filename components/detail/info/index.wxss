@@ -1,0 +1,24 @@
+/* components/detail/info/index.wxss */
+.info-wrapper{
+  display:flex;
+  justify-content: space-between;
+  margin-top:40rpx;
+}
+.coverImage{
+  width:278rpx;
+  height:382rpx;
+  margin-right:30rpx;
+}
+.right-info .movie-name{
+  font-size:60rpx;
+  font-weight:bold;
+}
+.right-info .description{
+  font-size:28rpx;
+  color:#b4b3b4;
+  line-height:40rpx;
+  margin-bottom:14rpx;
+}
+.right-info .card{
+   margin-bottom:40rpx;
+}

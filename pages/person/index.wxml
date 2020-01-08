@@ -1,0 +1,155 @@
+<!--pages/person/index.wxml-->
+<nav bgColor="bg-gradual-purple" title="个人中心"></nav>
+<!--未登录start-->
+<view class="personal-wrapper" wx:if="{{!isLogined}}">
+  <!--header start-->
+  <view class="header" catchtap="toLogin">
+    <x-image class="avatar" open-type="getUserInfo" catch:getUserInfo="onGetUserInfo">
+      <image class="logo" mode="widthFix" src="{{userAvatar?userAvatar:'/static/img/user.png'}}"  slot="img"></image>
+    </x-image>
+    <view class="loginOrReg">
+      <view class="login">登录</view>
+      <text>/</text>
+      <view class="reg">注册</view>
+    </view>
+  </view>
+  <!--header end-->
+  <!--order start-->
+  <view class="order-wrapper">
+    <view class="left">我的订单</view>
+    <view class="right">
+      <text>全部订单</text>
+      <image mode="widthFix" class="arrow" src="/static/img/arrow.png"></image>
+    </view>
+  </view>
+  <!--order end-->
+  <x-divider lineHeight="2rpx" bgColor="#dbdbdb"></x-divider>
+  <!--info start-->
+  <view class="info-wrapper">
+    <view class="info-item">
+      <image mode="widthFix" src="/static/img/qianbao.png"></image>
+      <text>待付款</text>
+    </view>
+    <view class="info-item">
+      <image mode="widthFix" src="/static/img/wuliu.png"></image>
+      <text>待收货</text>
+    </view>
+    <view class="info-item">
+      <image mode="widthFix" src="/static/img/weixiu.png"></image>
+      <text>退换修</text>
+    </view>
+  </view>
+  <!--info end-->
+  <x-divider lineHeight="20rpx" bgColor="#f7f7f7"></x-divider>
+  <!--discount start-->
+  <view class="discount-wrapper">
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/vip.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>会员中心</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+        <x-divider lineWidth="648rpx" lineHeight="2rpx" bgColor="#d8d8d8" />
+      </view>
+    </view>
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/discount.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>我的优惠</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--discount end-->
+  <!-- service start-->
+  <view class="service-wrapper">
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/service.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>服务中心</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+        <x-divider lineWidth="648rpx" lineHeight="2rpx" bgColor="#d8d8d8" />
+      </view>
+    </view>
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/mi.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>小米之家</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--service end-->
+  <x-divider lineHeight="20rpx" bgColor="#f7f7f7" />
+  <!--setting start-->
+  <view class="setting-wrapper">
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/f.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>F码通道</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+        <x-divider lineWidth="648rpx" lineHeight="2rpx" bgColor="#d8d8d8" />
+      </view>
+    </view>
+    <view class="discount-item">
+      <image class="item-logo" mode="widthFix" src="/static/img/setting.png"></image>
+      <view class="right">
+        <view class="info">
+          <text>设置</text>
+          <image class="arrow" src="/static/img/arrow.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--setting end-->
+
+</view>
+<!--未登录end-->
+<!--登陆成功start-->
+<view class="personal-logined-wrapper"  wx:else>
+  <view class="logined-header" bindtap="showChooseImage">
+    <image mode="widthFix" src="{{avatar?avatar:'/static/img/default-face.png'}}" class="logined-avatar"></image>
+    <image mode="widthFix" src="/static/img/arrow.png" class="logined-arrow"></image>
+  </view>
+  <view class="logined-info" bindtap="toEditInfo">
+    <view class="logined-item">
+      <image class="logined-item-logo" mode="widthFix" src="/static/img/github.png"></image>
+      <view class="logined-item-info">
+        <view class="logined-item-text">昵称：{{username}}</view>
+        <image class="logined-item-arrow" mode="widthFix" src="/static/img/arrow.png"></image>
+      </view>
+    </view>
+
+    <view class="logined-item">
+      <image class="logined-item-logo" mode="widthFix" src="/static/img/github.png"></image>
+      <view class="logined-item-info">
+        <view class="logined-item-text">性别：{{gender}}</view>
+        <image class="logined-item-arrow" mode="widthFix" src="/static/img/arrow.png"></image>
+      </view>
+    </view>
+
+    <view class="logined-item">
+      <image class="logined-item-logo" mode="widthFix" src="/static/img/github.png"></image>
+      <view class="logined-item-info">
+        <view class="logined-item-text">年龄：{{age}}</view>
+        <image class="logined-item-arrow" mode="widthFix" src="/static/img/arrow.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--选择图片start-->
+  <x-chooseImage wx:if="{{isChooseImageShow}}" catch:cancel="cancel" catch:changeAvatar="changeAvatar"></x-chooseImage>
+  <!--选择图片end-->
+</view>
+<!--登录成功end-->
+<!--退出登录start-->
+<view class="out" bindtap="out">退出登录？</view>
+<!--退出登录end-->

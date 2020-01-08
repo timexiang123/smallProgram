@@ -1,0 +1,25 @@
+/* components/common/item/index.wxss */
+.list-item{
+  width:200rpx;
+}
+.list-item .coverPic{
+  height:270rpx !important;
+}
+.list-item .name{
+  font-size:30rpx;
+  font-weight:bold;
+  text-align:center;
+  margin-top:14rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.list-item .rating{
+  display:flex;
+  justify-content:center;
+  margin:10rpx 0;
+}
+.rating .score{
+  margin-left:12rpx;
+  color:#c3c4c6;
+}

@@ -1,0 +1,4 @@
+<!--components/books/classify/index.wxml-->
+<scroll-view class="classify-wrapper" scroll-x scroll-with-animation>
+   <view class="classify-item {{currentIndex === index?'active':''}}" wx:for="{{tags}}" wx:key="{{index}}" bindtap="switchTag" data-index="{{index}}">{{item}}</view>
+</scroll-view>

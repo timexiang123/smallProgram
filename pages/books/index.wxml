@@ -1,0 +1,18 @@
+<!--pages/books/index.wxml-->
+<nav bgColor="bg-gradual-green" title="我爱阅读"></nav>
+<view class="books-wrapper">
+  <!--搜索start-->
+     <b-search></b-search>
+  <!--搜索end-->
+   <!--分类start-->
+     <b-classify bindchangeTag="changeTag"></b-classify>
+   <!--分类end-->
+   <!--书籍列表start-->
+   <view class="book-list">
+     <block wx:for="{{booksList}}" wx:key="{{item.id}}" >
+        <b-book itemObj="{{item}}" bindtap="toBookDetail" data-id="{{item.id}}"></b-book>
+     </block>
+   </view>
+   <!--书籍列表end-->
+</view>
+

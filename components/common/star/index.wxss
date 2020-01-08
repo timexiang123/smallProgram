@@ -1,0 +1,5 @@
+/* components/common/star/index.wxss */
+.star-wrapper image{
+  width:24rpx;
+  height:24rpx;
+}

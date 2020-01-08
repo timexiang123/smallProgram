@@ -1,0 +1,20 @@
+/* components/books/detail/info/des/index.wxss */
+.des-wrapper{
+  color:#b1b1b1;
+  overflow:hidden;
+}
+.score-releated{
+  display:flex;
+  align-items: center;
+  margin-top:38rpx;
+  font-size:20rpx;
+}
+.star image{
+  vertical-align: middle;
+}
+.score{
+  margin:0 10rpx;
+}
+.name-releated{
+  margin:24rpx 0 30rpx 0;
+}

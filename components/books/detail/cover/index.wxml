@@ -1,0 +1,11 @@
+<!--components/books/detail/cover/index.wxml-->
+<view class="cover-wrapper">
+    <image-btn open-type="share" class="share-wrapper">
+      <image mode="widthFix" class="share" src="/static/img/share.png" slot="img"></image>
+    </image-btn>
+  <image mode="widthFix" class="cover-image" src="{{imgCover}}"></image>
+  <view class="baidu-logo">
+    <image mode="widthFix" class="baidu" src="/static/img/baidu.png"></image>
+  </view>
+  <view class="book-name">{{title}}</view>
+</view>

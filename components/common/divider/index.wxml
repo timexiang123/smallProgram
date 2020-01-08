@@ -1,0 +1,2 @@
+<!--components/common/divider/index.wxml-->
+<view class="divider" style="width:{{lineWidth}};height:{{lineHeight}};background-color:{{bgColor}};"></view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-title":"/components/common/title/index",
+    "x-star":"/components/common/star/index"
+  }
+}

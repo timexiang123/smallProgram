@@ -1,0 +1,65 @@
+/* pages/login/index.wxss */
+.login-wrapper{
+  width:100vw;
+  height:100vh;
+  background-color:#fff;
+  overflow:hidden;
+}
+.avatar{
+  display:block;
+  width:160rpx;
+  height:160rpx;
+  margin:120rpx auto 72rpx;
+}
+.userName,.password{
+  display:flex;
+  align-items:center;
+  width:680rpx;
+  height:120rpx;
+  margin:auto;
+  border-bottom:2rpx solid #dfdfde;
+  font-size:32rpx;
+}
+.userName text,.password text{
+  font-size:38rpx;
+  color:#818081;
+}
+.submit{
+  width:604rpx !important;
+  height:92rpx !important;
+  background-color:#0081fb;
+  margin:64rpx auto 76rpx;
+  padding:0 !important;
+  font-size:36rpx;
+  font-weight:normal;
+  color:#fff;
+  text-align:center;
+  line-height:92rpx;
+}
+.otherWays{
+  width:564rpx;
+  margin:auto;
+}
+.title{
+  display:flex;
+  align-items: center;
+}
+.title .text{
+  font-size:28rpx;
+  color:#808080;
+  margin:0 20rpx;
+}
+.title .line{
+  flex:1;
+  height:2rpx;
+  background-color:#808080;
+}
+.suggest{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top:36rpx;
+}
+.suggest image{
+  width:64rpx;
+  height:64rpx;
+}

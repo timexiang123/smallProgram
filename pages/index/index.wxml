@@ -1,0 +1,24 @@
+<view class="index-wrapper">
+  <!--导航栏start-->
+  <nav title="郑文祥影院"></nav>
+  <!--导航栏end-->
+  <!--轮播start-->
+  <x-swiper></x-swiper>
+  <!--轮播end-->
+  <x-divider></x-divider>
+  <!--即将上映start-->
+  <x-comming-soon></x-comming-soon>
+  <!--即将上映end-->
+  <x-divider></x-divider>
+  <!--预告start-->
+  <x-notice></x-notice>
+  <!--预告end-->
+  <x-divider></x-divider>
+  <!--top250start-->
+  <x-top250></x-top250>
+  <!--top250end-->
+   <x-divider></x-divider>
+  <!--即将上映start-->
+  <x-in_theaters></x-in_theaters>
+  <!--即将上映end-->
+</view>

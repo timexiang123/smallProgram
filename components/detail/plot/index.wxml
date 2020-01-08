@@ -1,0 +1,5 @@
+<!--components/detail/plot/index.wxml-->
+<view class="plot-wrapper">
+  <view class="plot-title">剧情介绍</view>
+  <view class="plot-main">{{summary}}</view>
+</view>

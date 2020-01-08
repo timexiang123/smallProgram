@@ -1,0 +1,169 @@
+/* pages/person/index.wxss */
+/*  登录之前的页面样式 start*/
+.personal-wrapper{
+  background-color:#fff;
+}
+/*header start*/
+.header{
+  display: flex;
+  align-items: center;
+  height:166rpx;
+  background-color:#eb7e17;
+}
+.avatar{
+  width:100rpx;
+  height:100rpx;
+  margin-left:30rpx;
+  margin-right:20rpx;
+}
+.logo{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+}
+.loginOrReg{
+  display:flex;
+  font-size:30rpx;
+  color:#fff;
+}
+.loginOrReg text{
+  margin:0 10rpx;
+  font-size:36rpx;
+}
+/*header end*/
+/*order start*/
+.order-wrapper{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:84rpx;
+  padding:0 30rpx;
+  font-size: 30rpx;
+}
+.order-wrapper .right text{
+  margin-right:14rpx;
+}
+.arrow{
+  position:relative;
+  top:4rpx;
+  width:32rpx;
+  height:32rpx;
+}
+/*order end*/
+/*info start*/
+.info-wrapper{
+  display:flex;
+  height:178rpx;
+}
+.info-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  flex:1;
+}
+.info-item image{
+  width:56rpx;
+  height:56rpx;
+}
+.info-item text{
+  font-size:24rpx;
+  margin-top:26rpx;
+}
+/*info end*/
+/*discountservice/setting start*/
+.discount-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:110rpx;
+  padding-left:30rpx;
+  white-space:nowrap;
+}
+.discount-item .item-logo{
+  width:42rpx !important;
+  height:42rpx !important;
+  margin-right:30rpx;
+}
+.discount-item .right{
+  height:100%;
+  flex:1;
+  font-size:30rpx;
+}
+.discount-item .right .info{
+  height:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:30rpx;
+}
+/*  登录之前的页面样式 end*/
+
+
+/*discount/service/setting end*/
+/*  登录之后的页面样式 start*/
+.personal-logined-wrapper{
+  background-color:#fff;
+}
+/*header start*/
+.logined-header{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height:166rpx;
+  padding:0 30rpx;
+  background-color:#ffd85f;
+}
+.logined-avatar{
+  width:100rpx;
+  height:100rpx;
+  border-radius:100%;
+}
+.logined-arrow{
+  width:60rpx;
+  height:60rpx;
+}
+/*header end*/
+/*修改个人信息start*/
+.logined-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 32rpx;
+  height:114rpx;
+  border-bottom:2rpx solid #dadada;
+}
+.logined-item-logo{
+  display:block;
+  width:54rpx;
+  height:54rpx;
+  margin-right:36rpx;
+}
+.logined-item-info{
+  flex:1;
+}
+.logined-item-info{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logined-item-arrow{
+  width:36rpx;
+  height:36rpx;
+}
+.logined-item-text{
+  font-size:36rpx;
+}
+
+/*修改个人信息end*/
+
+/*  登录之后的页面样式 end*/
+/*退出登录start*/
+.out{
+  margin-top:20rpx;
+  font-size:40rpx;
+  color:#f00;
+  text-align:center;
+}
+/*退出登录end*/

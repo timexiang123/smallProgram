@@ -1,0 +1,11 @@
+<!--components/detail/performer/index.wxml-->
+<view class="performer-wrapper">
+   <view class="performer-title">演职人员</view>
+   <scroll-view class="performer-main" scroll-x scroll-with-animation>
+      <view class="performer-item" wx:for="{{casts}}" wx:key="{{item.id}}">
+         <image class="coverImage" mode="widthFix" src="{{item.avatars.large}}"></image>
+         <view class="name">{{item.name}}</view>
+         <view class="role">{{item.name_en}}</view>
+      </view>
+   </scroll-view>
+</view>

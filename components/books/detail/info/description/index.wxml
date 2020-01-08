@@ -1,0 +1,21 @@
+<!--components/books/detail/info/description/index.wxml-->
+<view class="description-wrapper ">
+  <view class="main-description {{!isOpenAll?'showPart':''}} ">
+    <view class="title">简介</view>
+    <view class="introduction">{{summary}}
+    </view>
+  </view>
+  <view class="openOrClose">
+   <view class="line">
+      <divider lineWidth="670rpx" lineHeight="2rpx" bgColor="#2d2d2d"></divider>
+    </view>
+    <view class="open" wx:if="{{!isOpenAll}}" bindtap="openOrClose">
+      <image mode="widthFix" src="/static/img/open.png"></image>
+      <text>展开全部</text>
+    </view>
+    <view class="close" wx:else  bindtap="openOrClose">
+      <image mode="widthFix" src="/static/img/close.png"></image>
+      <text>收起</text>
+    </view>
+  </view>
+</view>

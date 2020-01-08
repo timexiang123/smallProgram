@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "default",
+  "navigationBarBackgroundColor": "#07c160",
+  "navigationBarTitleText": "",
+  "navigationBarTextStyle": "white",
+  "onReachBottomDistance":0,
+  "enablePullDownRefresh":true,
+  "usingComponents":{
+    "x-item":"/components/common/item/index"
+  }
+}

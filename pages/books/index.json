@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav":"/components/nav/index",
+    "b-search":"/components/books/search/index",
+    "b-classify":"/components/books/classify/index",
+    "b-book": "/components/books/book/index"
+  }
+}

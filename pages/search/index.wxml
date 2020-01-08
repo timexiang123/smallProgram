@@ -1,0 +1,21 @@
+<!--pages/search/index.wxml-->
+<nav bgColor="bg-gradual-blue" title="搜索"></nav>
+<!--搜索start-->
+<view class="cu-bar bg-cyan search">
+  <view class="search-form radius">
+    <text class="cuIcon-search"  bindtap="toSearch"></text>
+    <input type="text" placeholder="搜索你喜欢的图书"  maxlength="{{20}}" confirm-type="搜索go" auto-focus  value="{{value}}" bindconfirm="toSearch" bindinput="change" bindblur="toSearch"></input>
+  </view>
+  <view class="action" bindtap="cancelSearch">
+    <text class="cuIcon-close"></text>
+    <text>取消</text>
+  </view>
+</view>
+<!--搜索end-->
+<!--list start-->
+<view class="list">
+  <view class="list-item-wrapper" wx:for="{{books}}" wx:key="{{item.id}}">
+       <x-item itemObj="{{item}}"></x-item>
+  </view>
+</view>
+<!-- list end-->

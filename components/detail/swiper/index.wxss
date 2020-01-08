@@ -1,0 +1,8 @@
+/* components/detail/swiper/index.wxss */
+swiper{
+  height:440rpx;
+}
+swiper-item ,swiper-item video{
+  width:100% ;
+  height:100% !important;
+}

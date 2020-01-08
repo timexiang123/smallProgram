@@ -1,0 +1,34 @@
+/* components/detail/info/infoCard/index.wxss */
+
+.card-wrapper {
+  width: 400rpx;
+  height: 140rpx;
+  background-color: #fff;
+}
+
+.main {
+  padding-left: 16rpx;
+  padding-top: 20rpx;
+}
+
+.card-title {
+  font-size: 24rpx;
+  color: #818181;
+  margin-bottom: 6rpx;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #f7ab2b;
+  margin-right: 66rpx;
+}
+
+.ratingRelated {
+  color: #818181;
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "star":"/components/common/star/index",
+    "divider":"/components/common/divider/index"
+  }
+}
